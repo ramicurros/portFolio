@@ -1,6 +1,184 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
 }
 
+.App {
+  height: auto;
+  width: auto;
+}
 
+.menu {
+  position: fixed;
+  padding: 10px;
+  font-size: 20px;
+  height: 100vh;
+  width: 350px;
+  background-color: #303136;
+  color: #00FDDC;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+}
+
+.rcb {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.developer-icon{
+  height: 125px;
+  width: 125px;
+}
+
+
+.menu-text {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.page {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  margin-left: 350px;
+  padding: 0px 50px;
+  width: stretch;
+  background-color: #2A2B2E;
+}
+
+.Ramiro {
+  color: #00FDDC;
+  margin-right: 18px;
+}
+
+.Curros-Bastit{
+  color: #CF5C36;
+}
+
+.section-1 {
+  height: 100vh;
+  width: stretch;
+}
+
+.my-name {
+  font-size: 60px;
+}
+
+.ImA {
+  color: #F5D547;
+  margin: 30px;
+  font-size: 35px;
+}
+
+.section-1-txt{
+  color: #00FDDC  ;
+}
+
+.downloadCv {
+  margin: 30px;
+}
+
+.section-2 {
+  height: 100vh;
+  width: stretch;
+  color: darkgreen;
+}
+
+.AboutMe {
+  font-size: 60px;
+}
+
+.AboutMe-text {
+  font-size: 20px;
+  margin: 45px 15px;
+}
+
+
+.section-3 {
+  height: 100vh;
+  width: stretch;
+}
+
+.section-4 {
+  height: 100vh;
+  width: stretch;
+}
+
+.SnT-title {
+  font-size: 30px;
+  margin: 15px 0px;
+}
+
+.programming-languages{
+  color: #F5D547;
+}
+
+.libraries-and-frameworks{
+  color: #CF5C36;
+}
+
+.software-and-tools{
+  color: #00FDDC;
+}
+
+.skills-and-tools {
+  margin: 0px 20px;
+  font-size: 20px;
+}
+
+.section-5 {
+  height: 100vh;
+  width: stretch;
+}
+
+.education {
+  padding-top: 175px;
+}
+
+.certifications {
+  color: white;
+  margin: 10px 0px;
+  font-size: 30px;
+}
+
+.redirect {
+  margin-left: 18px;
+}
+
+.section-6 {
+  height: 100vh;
+  width: stretch;
+  padding-top: 100px;
+}
+
+
+
+.section-6-label {
+  color: #00FDDC;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.email-label{
+  color: #CF5C36;
+}
+
+.phone-label{
+  color: #F5D547;
+}
+
+.closeKey{
+  margin-bottom: 275px;
+}
+
+.contact {
+  height: 70px;
+  width: 70px;
+  border: 1px solid cyan;
+  border-radius: 50%;
+  margin: 50px 10px;
+}
+
+.page-creation-label {
+  color: darkgreen;
+  font-size: 18px;
+}
