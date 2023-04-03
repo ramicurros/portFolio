@@ -2,3 +2,61 @@
   margin: 0px;
   padding: 0px;
 }
+
+.App{
+  padding: 0;
+}
+
+.navbarWrapper{
+  position: fixed;
+  width: stretch;
+  height: 60px;
+  border: 1px solid red;
+}
+
+.portfolioWrapper{
+  width: stretch;
+  margin-top: 60px;
+}
+
+.sideColumn{
+  position: fixed;
+  border: 1px solid blue;
+  width: 70px;
+  height: 100vh;
+}
+
+.page{
+  border: 1px solid purple;
+  margin-left: 70px;
+  width: stretch;
+}
+
+.page-container{
+  height: 100vh;
+}
+
+.aboutMeWrapper{
+  padding: 200px 260px;
+}
+
+.myName{
+  font-size: 64px;
+}
+
+.aboutMeContainer{
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.webDeveloper{
+  font-size: 36px;
+}
+
+.aboutMe{
+  font-size: 20px;
+}
+
+.aboutMeText{
+  padding-left: 10px;
+}
