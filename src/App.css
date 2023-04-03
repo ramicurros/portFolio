@@ -1,62 +1,521 @@
-*{
-  margin: 0px;
-  padding: 0px;
+:root {
+    font-size: 16px;
 }
 
-.App{
-  padding: 0;
+* {
+    font-family: 'Quicksand', sans-serif;
 }
 
-.navbarWrapper{
-  position: fixed;
-  width: stretch;
-  height: 60px;
-  border: 1px solid red;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.portfolioWrapper{
-  width: stretch;
-  margin-top: 60px;
+.navbarWrapper {
+    background-color: #001829;
 }
 
-.sideColumn{
-  position: fixed;
-  border: 1px solid blue;
-  width: 70px;
-  height: 100vh;
+.r-logoWrapper {
+    border-radius: 50%;
+    background-color: #6f728d;
+    color: white;
+    height: 32px;
+    width: 32px;
 }
 
-.page{
-  border: 1px solid purple;
-  margin-left: 70px;
-  width: stretch;
+.downloadCV {
+    background-color: #6f728d;
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
 }
 
-.page-container{
-  height: 100vh;
+.downloadCV:hover {
+    background-color: #424455;
+    color: white;
 }
 
-.aboutMeWrapper{
-  padding: 200px 260px;
+
+.nav-link.navItemColor,
+.contactMenu {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
 }
 
-.myName{
-  font-size: 64px;
+.nav-link.navItemColor:hover {
+    color: white;
+    border-bottom: 1px solid #6f728d;
 }
 
-.aboutMeContainer{
-  border-left: 1px solid black;
-  padding-left: 15px;
+/* burger menu */
+
+.navbar-toggler {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    transition: 0.5s ease-in-out;
 }
 
-.webDeveloper{
-  font-size: 36px;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus,
+.navbar-toggler:active {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
 }
 
-.aboutMe{
-  font-size: 20px;
+.navbar-toggler span {
+    margin: 0px;
+    padding: 0px;
 }
 
-.aboutMeText{
-  padding-left: 10px;
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.mid-bar {
+    margin-top: 0px;
+}
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+.nav-dropwdown {
+    border: none;
+    outline: 0;
+    background-color: #001829;
+    transition: all ease-in 0.3s
+}
+
+.project-item {
+    font-size: 0.875rem;
+    color: white;
+    transition: all 0.2s
+}
+
+.project-item:hover {
+    color: white;
+    background-color: #0a4066;
+}
+
+.dropdownIconBar {
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+.dropdownContact {
+    font-size: 0.875rem;
+    color: white;
+    transition: all 0.2s;
+}
+
+.dropdownContact:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+/*page*/
+
+.page {
+    margin-left: 58px;
+    background-color: #043040;
+}
+
+.portfolioWrapper {
+    margin-top: 58px;
+}
+
+.section-container {
+    min-height: 100vh;
+}
+
+.myName {
+    color: #00A7E1;
+    font-size: 4rem;
+}
+
+.aboutMe-wrapper1 {
+    padding: 0.5rem 1rem;
+    border-left: 1px solid #00A7E1;
+    max-width: 800px;
+}
+
+.web-developer {
+    color: white;
+    font-size: 2rem;
+}
+
+.aboutMe-description {
+    font-weight: 500;
+    color: #006B8F;
+    font-size: 1.25rem;
+}
+
+.aboutMe-txt {
+    border-left: 1px solid #0179a1;
+}
+
+.sideBar {
+    padding: 18px 0px !important;
+    position: fixed;
+    width: 58px;
+    padding: 8px;
+    background-color: #00243D;
+}
+
+.sideBar-icon {
+    font-size: 1.8rem;
+    color: #08c1ff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.sideBar-icon:hover {
+    color: #086888;
+}
+
+.sideBar-group-2 {
+    margin-bottom: 58px;
+}
+
+.dropMenu-icon:hover {
+    color: rgb(187, 187, 187);
+    transition: all 0.3s;
+}
+
+/*projects*/
+
+.projectsTitle {
+    font-size: 2.2rem;
+    color: rgb(180, 250, 227);
+}
+
+.projectCardWrapper {
+    margin-bottom: 60px;
+}
+
+.projectCard {
+    width: 18rem;
+    background-color: #09426b;
+    color: white;
+}
+
+.cardBody {
+    height: 170px;
+}
+
+.cardImg{
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+
+
+.cardButton {
+    background-color: #00A7E1;
+    color: white;
+    font-size: .875rem;
+    transition: all 0.3s;
+}
+
+.cardButton:hover {
+    background-color: #026485;
+    color: white;
+}
+
+.projectLanguages {
+    font-size: 1.25rem;
+}
+
+
+/*card hover*/
+
+.hoverButtons {
+    position: absolute;
+    top: 0;
+    background-color: #00a9e1d8;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.projectCard:hover>.hoverButtons {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0.375rem;
+}
+
+.hoverCardButton {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.hoverCardButton:hover {
+    background-color: #026485;
+    color: white;
+    border: 1px solid white;
+}
+
+/* skillsAndEducation */
+
+
+
+.ProgrammingLanguages,
+.LibrariesNFrameworks,
+.SoftwareNTools,
+.educationTitle {
+    font-size: 2rem;
+    color: #c3c7fa;
+}
+
+.certifications {
+    font-weight: 500;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.linkIcon {
+    background-color: #00A7E1;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 0.85rem;
+}
+
+.linkIcon:hover {
+    background-color: #097396;
+}
+
+.toolBox {
+    margin-top: 4px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.forWebsite {
+    font-weight: 500;
+    color: white;
+}
+
+.contactMe {
+    font-weight: 500;
+    color: #00A7E1;
+}
+
+.css-box {
+    border: 1px solid rgb(0, 140, 255);
+}
+
+.html-box {
+    border: 1px solid rgb(255, 123, 0);
+}
+
+.javascript-box {
+    border: 1px solid rgb(238, 255, 0);
+}
+
+.react-box {
+    border: 1px solid rgb(110, 170, 180);
+}
+
+.bootstrap-box {
+    border: 1px solid rgb(140, 0, 255);
+}
+
+.github-box {
+    border: 1px solid rgb(252, 252, 252);
+}
+
+.vsc-box {
+    border: 1px solid rgb(0, 102, 197);
+}
+
+.cssIcon {
+    color: rgb(0, 140, 255);
+    font-size: 1.75rem;
+}
+
+.htmlIcon {
+    color: rgb(255, 123, 0);
+    font-size: 1.75rem;
+}
+
+.javascriptIcon {
+    color: rgb(238, 255, 0);
+    font-size: 1.75rem;
+}
+
+.reactIcon {
+    color: rgb(97, 212, 233);
+    font-size: 1.75rem;
+}
+
+.bootstrapIcon {
+    color: rgb(140, 0, 255);
+    font-size: 1.75rem;
+}
+
+.githubIcon {
+    color: rgb(0, 0, 0);
+    font-size: 1.75rem;
+}
+
+.contactIcon {
+    color: white;
+}
+
+/* media queries */
+
+@media (min-width: 0px) and (max-width: 500px) {
+    .myName {
+        font-size: 2.3rem;
+    }
+
+    .projectCard{
+        width: 15rem;
+    }
+
+    .web-developer {
+        font-size: 1.3rem;
+    }
+
+
+    .ProgrammingLanguages,
+    .LibrariesNFrameworks,
+    .SoftwareNTools,
+    .educationTitle {
+        font-size: 1.3rem;
+        color: #c3c7fa;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 768px){
+
+    .myName {
+        font-size: 2.5rem;
+    }
+
+    .projectCard{
+        width: 24rem;
+    }
+
+    .web-developer {
+        font-size: 1.5rem;
+    }
+
+    .ProgrammingLanguages,
+    .LibrariesNFrameworks,
+    .SoftwareNTools,
+    .educationTitle {
+        font-size: 1.5rem;
+        color: #c3c7fa;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .myName {
+        font-size: 2.5rem;
+    }
+
+    .web-developer {
+        font-size: 1.5rem;
+    }
+
+    .ProgrammingLanguages,
+    .LibrariesNFrameworks,
+    .SoftwareNTools,
+    .educationTitle {
+        font-size: 1.5rem;
+        color: #c3c7fa;
+    }
+
+}
+
+@media (max-width: 992px){
+    .page {
+        margin-left: 0px;
+    }
+
+    .aboutMe-description {
+        font-size: 1rem;
+    }
+
+    .certifications {
+        color: white;
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+    .myName {
+        font-size: 3rem;
+    }
+
+    .web-developer {
+        font-size: 1.5rem;
+    }
+
+    .aboutMe-description {
+        font-size: 1rem;
+    }
+
+    .ProgrammingLanguages,
+    .LibrariesNFrameworks,
+    .SoftwareNTools,
+    .educationTitle {
+        font-size: 1.75rem;
+        color: #c3c7fa;
+    }
+
+    .certifications {
+        color: white;
+        font-size: 1.125rem;
+    }
 }

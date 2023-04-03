@@ -1,68 +1,34 @@
-
+import Menu from './components/navbar';
+import SideBar from './components/sideBar';
+import AboutMe from './components/aboutMe';
+import Projects from './components/projects';
+import SkillsAndCertifications from './components/skillsAndCertifications'
 import './App.css';
 
 function App() {
+
   return (
-    <div className="d-flex container-fluid flex-column App">
-      <div className='d-flex align-items-center navbarWrapper'>navbar</div>
-      <div className='d-flex portfolioWrapper'>
-        <div className='d-flex flex-column sideColumn'>sideColumn</div>
-        <div className='d-flex flex-column page'>
-          <div className='d-flex flex-column page-container aboutMeWrapper'>
-            <span className='myName'>Ramiro Curros Bastit</span>
-            <div className='aboutMeContainer'>
-              <span className='webDeveloper'>[I'm a web developer]</span>
-              <div className='d-flex flex-column aboutMe'>
-                <span className='aboutMeTag'>AboutMe</span>
-                <span className='aboutMeText'>lorem</span>
-                <span className='aboutMeTag'>AboutMe</span>
-              </div>
+    <>
+      <Menu />
+      <div className="container-fluid p-0">
+        <div className="d-flex flex-row portfolioWrapper">
+          <div className="d-lg-flex d-none flex-column align-items-center justify-content-center h-100 sideBar">
+            <SideBar />
+          </div>
+          <div id='aboutMe' className="d-flex flex-column justify-content-center w-100 page">
+            <div className='d-flex flex-column justify-content-center align-items-start section-container'>
+              <AboutMe />
             </div>
-          </div>
-          <div className='d-flex flex-column justify-content-center align-items-center flex-lg-row page-container projectPage'>
-
-          </div>
-          <div className='d-flex flex-column justify-content-center align-items-center flex-lg-row page-container projectPage'>
-
-          </div>
-          <div className='d-flex flex-column justify-content-center align-items-center flex-lg-row page-container projectPage'>
-
-          </div>
-          <div className='d-flex flex-column justify-content-center align-items-center flex-lg-row page-container projectPage'>
-
-          </div>
-          <div className='d-flex flex-column justify-content-center align-items-center flex-lg-row page-container projectPage'>
-
-          </div>
-          <div className='d-flex flex-column justify-content-center align-items-center flex-lg-row page-container projectPage'>
-
-          </div>
-          <div className='d-flex flex-column flex-lg-row page-container skillsAndTools'>
-              <div className='skillsAndTools1'>
-                <div className='skills'>
-
-                </div>
-                <div className='d-flex flex-column thisWebsite'>
-                  <div className='thisWebsite1'>
-
-                  </div>
-                  <div className='thisWebsite2'>
-
-                  </div>
-                </div>
-              </div>
-              <div className='skillsAndTools2'>
-                <div className='tools'>
-
-                </div>
-                <div className='contactMe'>
-
-                </div>
-              </div>
-          </div>
+            <div id='projects' className='d-flex flex-column justify-content-center align-items-center section-container'>
+              <Projects />
+            </div>
+            <div id='skillsAndCertifications' className='d-flex flex-column justify-content-center  align-items-start section-container'>
+              <SkillsAndCertifications />
+            </div>
+          </div> 
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
