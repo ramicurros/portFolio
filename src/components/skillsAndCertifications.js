@@ -39,10 +39,10 @@ function SkillsAndCertifications() {
                     <div class='d-flex flex-column align-items-start justify-content-center education mt-2 mb-2 mt-md-0 mb-md-0'>
                         <span className='educationTitle'>Education</span>
                         <div className='d-flex flex-column certifications ms-2'>
-                            <span className='certification mt-1 mb-1'>Responsive Web Design<a href='' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
-                            <span className='certification mt-1 mb-1'>Front End Development Libraries<a href='' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
-                            <span className='certification mt-1 mb-1'>JavaScript Algorithms and Data Structures<a href='' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
-                            <span className='certification mt-1 mb-1'>EF SET English Certificate 73/100 (C2 Proficient)<a href='' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
+                            <span className='certification mt-1 mb-1'>Responsive Web Design<a href='https://www.freecodecamp.org/certification/Kiw1/responsive-web-design' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
+                            <span className='certification mt-1 mb-1'>Front End Development Libraries<a href='https://www.freecodecamp.org/certification/Kiw1/front-end-development-libraries' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
+                            <span className='certification mt-1 mb-1'>JavaScript Algorithms and Data Structures<a href='https://www.freecodecamp.org/certification/Kiw1/javascript-algorithms-and-data-structures' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
+                            <span className='certification mt-1 mb-1'>EF SET English Certificate 73/100 (C2 Proficient)<a href='https://www.efset.org/cert/8bmJma' className='ms-1 linkIcon fas fa-up-right-from-square'></a></span>
                         </div>
                     </div>
                 </div>

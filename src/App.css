@@ -6,6 +6,12 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+*, html{
+    scroll-behavior: smooth !important;
+    scroll-padding: 20px !important;
+}
+
+
 a {
     color: inherit;
     text-decoration: none;

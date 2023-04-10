@@ -20,14 +20,14 @@ function ProjectCard({ name, description, img, tools, code, live }) {
                         })}
                     </div>
                     <div className="d-flex d-lg-none flex-row p-2 justify-content-evenly">
-                        <a href={live} className="btn-sm btn cardButton"><span className="fas fa-desktop fa-fw"></span></a>
-                        <a href={code} className="btn-sm btn cardButton"><span className="fas fa-code fa-fw"></span></a>
+                        <a href={live} target='_blank' className="btn-sm btn cardButton"><span className="fas fa-desktop fa-fw"></span></a>
+                        <a href={code} target='_blank' className="btn-sm btn cardButton"><span className="fas fa-code fa-fw"></span></a>
                     </div>
                 </div>
                 <div className="d-none d-lg-flex flex-column justify-content-center align-items-center hoverButtons">
                     <div className="d-flex justify-content-evenly w-100">
-                        <a href={live} className="btn-sm btn hoverCardButton"><span className="fas fa-desktop fa-fw"></span></a>
-                        <a href={code} className="btn-sm btn hoverCardButton"><span className="fas fa-code fa-fw"></span></a>
+                        <a href={live} target='_blank' className="btn-sm btn hoverCardButton"><span className="fas fa-desktop fa-fw"></span></a>
+                        <a href={code} target='_blank' className="btn-sm btn hoverCardButton"><span className="fas fa-code fa-fw"></span></a>
                     </div>
                 </div>
             </div>
